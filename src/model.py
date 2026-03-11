@@ -26,7 +26,7 @@ class Model:
             return response_error, str(e)
     
     @staticmethod
-    def openai_chatgpt(transcript, prompt, extra="", model_type="gpt-5-nano"):
+    def openai_gpt(transcript, prompt, extra="", model_type="gpt-5-nano"):
         load_dotenv()
         try:
             client = OpenAI(
